@@ -8,4 +8,6 @@ class ECommerceCccaApplication
 
 fun main(args: Array<String>) {
 	runApplication<ECommerceCccaApplication>(*args)
+	print( "O CPF é: ${ValidateCPF().validate("77777777777")}")
+
 }
