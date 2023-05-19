@@ -7,7 +7,13 @@ import org.springframework.boot.runApplication
 class ECommerceCccaApplication
 
 fun main(args: Array<String>) {
-	runApplication<ECommerceCccaApplication>(*args)
-	print( "O CPF é: ${ValidateCPF().validate("77777777777")}")
+    runApplication<ECommerceCccaApplication>(*args)
+    println("O CPF é: ${ValidateCPF().validate("00761779477")}")
+
+    println("O CPF é: ${ValidateCPF().validate("11111111111")}")
+    println("O CPF é: ${ValidateCPF().validate("25410512055")}")
+    println("O CPF é: ${ValidateCPF().validate("2541051205")}")
+    println("O CPF é: ${ValidateCPF().validate(null)}")
+
 
 }
