@@ -1,5 +1,8 @@
 package com.example.ecommerceccca
 
+import org.springframework.stereotype.Component
+
+@Component
 class ValidateCPF {
     fun validate(originalCPF: String? = null): Boolean {
         originalCPF ?: return false.also { println("CPF nulo") }
